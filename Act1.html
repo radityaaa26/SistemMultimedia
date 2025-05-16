@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum Sistem Multimedia</title>
+    <style>
+        .teks-animasi {
+            animation: munculHilang 2s infinite;
+        }
+
+        @keyframes munculHilang {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        img {
+            border: 2px solid #333;
+            border-radius: 10px;
+            margin-top: 10px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Praktikum Sistem Multimedia</h1>
+
+    <h2>Tema: Teks Pada Website</h2>
+    <p>Dalam Sistem Multimedia teks berperan penting sebagai sarana penyampaian informasi. Teks bisa digunakan untuk judul, deskripsi, maupun penjelasan tambahan.</p>
+    <p>Contoh teks dengan gaya <i>italic</i>, <b>tebal</b> dan <u>garis bawah</u></p>
+
+    <marquee behavior="scroll" direction="left">
+        Ini adalah teks berjalan (marquee) yang dapat digunakan untuk pengumuman atau highlight informasi
+    </marquee>
+
+    <h2>Animasi Teks</h2>
+    <p class="teks-animasi">Teks ini muncul dan menghilang secara berulang dengan animasi CSS!</p>
+
+    <h2>Meme Santai</h2>
+    <img src="konten/santai dulu masbro.jpg" alt="Meme Santai Dulu Masbro" class="teks-animasi">
+
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="konten/Adit Tolongin Dit.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+    <h2>Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IpFX2vq8HKw?si=NT_vscLEjHt38cF6" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+</body>
+</html>
